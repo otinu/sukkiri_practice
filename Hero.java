@@ -1,5 +1,7 @@
 package sukkiri_practice;
 
+import java.util.Objects;
+
 public class Hero {
 	private String name;
 	private int hp;
@@ -10,9 +12,17 @@ public class Hero {
 		this.hp = hp;
 		this.mp = mp;
 	}
+	Hero(String name, int hp) {
+		this.name = name;
+		this.hp = hp;
+	}
 
 	public String toString() {
 		return ("勇者(名前=" + this.name + " HP=" + this.hp + " MP=" + this.mp + ")");
+	}
+
+	public int hashCode() {
+		return Objects.hash(this.name, this.hp);
 	}
 
 	public boolean equals(Object o) {
