@@ -2,10 +2,14 @@ package sukkiri_practice;
 
 import java.util.Objects;
 
-public class Hero {
+public class Hero implements Cloneable {
 	private String name;
 	private int hp;
 	private int mp;
+
+	Hero() {
+
+	}
 
 	Hero(String name, int hp, int mp) {
 		this.name = name;
@@ -34,5 +38,13 @@ public class Hero {
 			return false;
 		}
 		return true;
+	}
+
+	public Hero clone() {
+		Hero result = new Hero();
+		result.name = this.name;
+		result.hp = this.hp;
+		result.mp = this.mp;
+		return result;
 	}
 }
