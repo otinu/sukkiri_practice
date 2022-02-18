@@ -6,6 +6,7 @@ public class Hero implements Cloneable {
 	private String name;
 	private int hp;
 	private int mp;
+	Sword sword;
 
 	Hero() {
 
@@ -21,8 +22,12 @@ public class Hero implements Cloneable {
 		this.hp = hp;
 	}
 
+	void setSword(Sword sword) {
+		this.sword = sword;
+	}
+
 	public String toString() {
-		return ("勇者(名前=" + this.name + " HP=" + this.hp + " MP=" + this.mp + ")");
+		return ("勇者(名前=" + this.name + " HP=" + this.hp + " MP=" + this.mp + ")" + "\n" + "武器: " + this.sword.swordName);
 	}
 
 	public int hashCode() {
