@@ -10,6 +10,7 @@ public class Code1_11 {
 		System.out.println(hero);
 
 		// ここでNullPointerException
+		//	⇒Swordクラスにclone()メソッドを定義することで解決
 		Hero hero2 = hero.clone();
 		System.out.println(hero2);
 

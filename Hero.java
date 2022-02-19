@@ -50,6 +50,7 @@ public class Hero implements Cloneable {
 		result.name = this.name;
 		result.hp = this.hp;
 		result.mp = this.mp;
+		result.sword = this.sword.clone();
 		return result;
 	}
 }
