@@ -2,7 +2,7 @@ package sukkiri_practice;
 
 import java.util.Objects;
 
-public class Hero implements Cloneable {
+public class Hero extends heroUnit implements Cloneable {
 	private String name;
 	private int hp;
 	private int mp;
