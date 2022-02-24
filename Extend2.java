@@ -1,6 +1,9 @@
 package sukkiri_practice;
 
 import java.util.Optional;
+import java.util.OptionalDouble;
+import java.util.OptionalInt;
+import java.util.OptionalLong;
 
 public class Extend2 {
 
@@ -13,12 +16,15 @@ public class Extend2 {
 		Optional<String> op2 = Optional.ofNullable(null);
 		Optional<Integer> op3 = Optional.ofNullable(7);
 
-
 		// new演算子でインスタンス生成は不可
 		// Optional<String> op3 = new Optional();
 
 		// 引数なしでも生成不可
 		// Optional<String> op4 = Optional.ofNullable();
+
+		OptionalInt optionalInt = OptionalInt.of(1);
+		OptionalLong optionalLong = OptionalLong.of(10L);
+		OptionalDouble optionalDouble = OptionalDouble.of(10.0);
 
 		// ②=================================================================
 
