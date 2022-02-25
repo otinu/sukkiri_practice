@@ -22,6 +22,7 @@ public class Extend2 {
 		// 引数なしでも生成不可
 		// Optional<String> op4 = Optional.ofNullable();
 
+		// 処理効率の観点から、ラッパークラスとは別のクラスが用意されている。
 		OptionalInt optionalInt = OptionalInt.of(1);
 		OptionalLong optionalLong = OptionalLong.of(10L);
 		OptionalDouble optionalDouble = OptionalDouble.of(10.0);
