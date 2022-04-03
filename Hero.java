@@ -1,8 +1,9 @@
 package sukkiri_practice;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Hero extends heroUnit implements Cloneable {
+public class Hero extends heroUnit implements Cloneable, Serializable {
 	private String name;
 	private int hp;
 	private int mp;
