@@ -11,6 +11,7 @@ public class Extend11 {
 		pstmt.setTimestamp(1, ts);
 
 
+
 		// DBから取り出したレコードを扱う場合
 		java.sql.Timestamp ts = rs.getTimestamp(1);
 		long l = ts.getTime();
